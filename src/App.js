@@ -57,10 +57,9 @@ const getListStyle = isDraggingOver => ({
   width: 250
 });
 
-class App extends Component {
-  state: State;
+class App extends Component<*, State> {
 
-  state = {
+  state: State = {
     items: getItems(10),
   }
 
